@@ -15,7 +15,8 @@ export class SignInComponent implements OnInit {
   isLoginFailed = false;
   errorMessage = '';
   roles: string[] = [];
-  res: string[] = [];
+  token: any;
+  res:any;
   
  
  
@@ -38,25 +39,25 @@ export class SignInComponent implements OnInit {
     
   }
   onSubmit() {
-    this.authService.login(this.form).subscribe((res: Response) => {
+    this.authService.login(this.form).subscribe((res: any) => {
       console.log(res)
-      console.log(res['url'])
+      
      
       
-      // localStorage.setItem('accessToken',res['token'])
-      // localStorage.setItem('username', res['username'])
-      // localStorage.setItem('user_id', res['user_id'])
-      // localStorage.setItem('role', res['role'])
+      localStorage.setItem('accessToken',res['token'])
+      localStorage.setItem('username', res['username'])
+      localStorage.setItem('user_id', res['user_id'])
+      localStorage.setItem('role', res['role'])
      
     
       // this.toastr.success('Logged in successfully');
   
-      // if ((res['role']) === "is_admin") {
-      //   this.router.navigate(['doctor']);
-      // }
-      // else{
-      //   this.router.navigate(['customer']);
-      // }
+      if ((res['role']) === "is_admin") {
+        this.router.navigate(['admin']);
+      }
+      else{
+        this.router.navigate(['customer']);
+      }
 
     }, error => {
       // this.toastr.error('Kindly provide the correct credentials');
