@@ -10,7 +10,9 @@ import { SignInComponent } from './auth/sign-in/sign-in.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { AdminComponent } from './admin/admin/admin.component';
 import { CustomerComponent } from './customer/customer/customer.component';
-
+import { HomeComponent } from './home/home.component';
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +20,16 @@ import { CustomerComponent } from './customer/customer/customer.component';
     SignInComponent,
     SignUpComponent,
     AdminComponent,
-    CustomerComponent
+    CustomerComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpClientModule
 
   ],
   providers: [],

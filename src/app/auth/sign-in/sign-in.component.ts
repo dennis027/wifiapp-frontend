@@ -17,14 +17,14 @@ export class SignInComponent implements OnInit {
   roles: string[] = [];
   token: any;
   res:any;
-  
- 
- 
+
+
+
 
   constructor(private authService: AuthService, private router: Router,
     private tokenStorage: TokenStorageService) { }
 
-    
+
 
   ngOnInit(): void {
     if (this.tokenStorage.getToken()) {
@@ -36,22 +36,23 @@ export class SignInComponent implements OnInit {
       username: '',
       password: '',
     }
-    
+
   }
   onSubmit() {
     this.authService.login(this.form).subscribe((res: any) => {
       console.log(res)
-      
-     
-      
+
+
+
       localStorage.setItem('accessToken',res['token'])
       localStorage.setItem('username', res['username'])
       localStorage.setItem('user_id', res['user_id'])
       localStorage.setItem('role', res['role'])
-     
-    
+      console.log(res['username'])
+
+
       // this.toastr.success('Logged in successfully');
-  
+
       if ((res['role']) === "is_admin") {
         this.router.navigate(['admin']);
       }
@@ -62,7 +63,7 @@ export class SignInComponent implements OnInit {
     }, error => {
       // this.toastr.error('Kindly provide the correct credentials');
     })
-   
+
   }
 
   reloadPage(): void {

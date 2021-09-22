@@ -2,16 +2,16 @@
     a {
       text-decoration: none;
     }
-  
+
   </style>
   <div class="container mt-5" style="font-family: 'Yeon Sung',cursive;">
     <div class="col-md-6 mx-auto" style="margin-top:10%; ">
-  
+
       <form class="text-center border border-light p-5" *ngIf="!isLoggedIn" name="form"
         (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
-  
+
         <p class="h4 mb-4">Sign In</p>
-  
+
         <div class="form-group">
           <input type="text" class="form-control mb-4" name="username" placeholder="Username" [(ngModel)]="form.username"
             required #username="ngModel" />
@@ -47,7 +47,9 @@
       <div class="alert alert-success" *ngIf="isLoggedIn">
         Signed in as {{ roles }}.
       </div>
-  
+
     </div>
-  
+
   </div>
+
+
