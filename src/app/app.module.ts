@@ -13,15 +13,19 @@ import { CustomerComponent } from './customer/customer/customer.component';
 import { HomeComponent } from './home/home.component';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+import { NavbarComponent } from './navbar/navbar/navbar.component';
+import { AccessControlDirective } from './access-control.directive';
 @NgModule({
   declarations: [
     AppComponent,
-   
+
     SignInComponent,
     SignUpComponent,
     AdminComponent,
     CustomerComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent,
+    AccessControlDirective
   ],
   imports: [
     BrowserModule,
