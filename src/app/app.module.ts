@@ -15,6 +15,8 @@ import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
 import { AccessControlDirective } from './access-control.directive';
+import { FooterComponent } from './footer/footer/footer.component';
+import { ContactComponent } from './contact/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,9 @@ import { AccessControlDirective } from './access-control.directive';
     CustomerComponent,
     HomeComponent,
     NavbarComponent,
-    AccessControlDirective
+    AccessControlDirective,
+    FooterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
