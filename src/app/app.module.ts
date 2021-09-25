@@ -17,6 +17,8 @@ import { NavbarComponent } from './navbar/navbar/navbar.component';
 import { AccessControlDirective } from './access-control.directive';
 import { FooterComponent } from './footer/footer/footer.component';
 import { ContactComponent } from './contact/contact/contact.component';
+import { BusinessComponent } from './bundle/business/business.component';
+import { HomesComponent } from './bundle/homes/homes.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,9 @@ import { ContactComponent } from './contact/contact/contact.component';
     NavbarComponent,
     AccessControlDirective,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    BusinessComponent,
+    HomesComponent
   ],
   imports: [
     BrowserModule,

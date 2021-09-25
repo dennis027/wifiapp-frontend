@@ -8,6 +8,9 @@ import { FooterComponent } from './footer/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
 import {ContactComponent} from './contact/contact/contact.component';
+import { HomesComponent } from './bundle/homes/homes.component';
+import { BusinessComponent } from './bundle/business/business.component';
+
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path: 'customer', component:CustomerComponent},
@@ -16,7 +19,9 @@ const routes: Routes = [
   {path:'signup',component:SignUpComponent},
   {path:'navbar',component:NavbarComponent},
   {path:'footer',component:FooterComponent},
-  {path:'contact',component:ContactComponent}
+  {path:'contact',component:ContactComponent},
+  {path:'homes',component:HomesComponent},
+  {path:'business',component:BusinessComponent}
 ];
 
 @NgModule({

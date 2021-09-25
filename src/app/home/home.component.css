@@ -1,5 +1,5 @@
 .responsive{
- 
+
 
   -webkit-animation: mover 2s infinite  alternate;
   animation: mover 2s infinite  alternate;
@@ -11,4 +11,30 @@
 @keyframes mover {
   0% { transform: translateY(0); }
   100% { transform: translateY(-20px); }
+}
+.stream{
+  width: 100%;
+  border-radius: 50% ;
+  height:150px
+
+}
+.social{
+  width: 100%;
+  border-radius: 70% ;
+  height:auto
+}
+.virtual{
+  width: 100%;
+  border-radius: 50%
+}
+.gaming{
+  width: 100%;
+  border-radius: 50% ;
+  height:150px
+}
+body{
+  background-color: rgba(155, 151, 179, 1);
+}
+.pkg{
+  text-align: center;
 }
