@@ -19,6 +19,8 @@ import { FooterComponent } from './footer/footer/footer.component';
 import { ContactComponent } from './contact/contact/contact.component';
 import { BusinessComponent } from './bundle/business/business.component';
 import { HomesComponent } from './bundle/homes/homes.component';
+import { SearchPipe } from './search.pipe';
+// import {CctvComponent} from './security/cctv/cctv.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,9 @@ import { HomesComponent } from './bundle/homes/homes.component';
     FooterComponent,
     ContactComponent,
     BusinessComponent,
-    HomesComponent
+    HomesComponent,
+    SearchPipe,
+    // CctvComponent
   ],
   imports: [
     BrowserModule,

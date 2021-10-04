@@ -43,3 +43,11 @@ body{
   height: 200px;
   background-color: red;
 }
+.panel panel-success{
+  display:inline-block;
+
+ overflow-x: scroll;
+}
+#btn1,#btn2{
+  margin:auto;
+}

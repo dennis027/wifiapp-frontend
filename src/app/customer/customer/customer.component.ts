@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AuthService } from 'src/app/service/auth.service.service';
-
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 @Component({
   selector: 'app-customer',
   templateUrl: './customer.component.html',

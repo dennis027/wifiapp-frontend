@@ -3,7 +3,7 @@ import { AuthService } from 'src/app/service/auth.service.service';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { TokenStorageService } from 'src/app/service/token-storage.service.service';
-
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',

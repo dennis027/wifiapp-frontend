@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar/navbar.component';
 import {ContactComponent} from './contact/contact/contact.component';
 import { HomesComponent } from './bundle/homes/homes.component';
 import { BusinessComponent } from './bundle/business/business.component';
+// import {CctvComponent} from './security/cctv/cctv.component'
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path:'footer',component:FooterComponent},
   {path:'contact',component:ContactComponent},
   {path:'homes',component:HomesComponent},
-  {path:'business',component:BusinessComponent}
+  {path:'business',component:BusinessComponent},
+  // {path:"cctv",component:CctvComponent}
 ];
 
 @NgModule({
