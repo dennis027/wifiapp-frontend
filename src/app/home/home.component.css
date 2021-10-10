@@ -33,7 +33,7 @@
   height:150px
 }
 body{
-  background-color: rgba(155, 151, 179, 1);
+  background-color: rgba(29, 157, 193, 0.8);
 }
 .pkg{
   text-align: center;
@@ -50,4 +50,35 @@ body{
 }
 #btn1,#btn2{
   margin:auto;
+}
+
+#overlay {
+  position: relative;
+  text-align: center;
+
+  color: white;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:black;
+}
+.snow {
+
+
+  background-color:blue;
+  opacity: 0.6 ;
+  height:460px;
+  width:100%
+
+}
+
+
+
+#what{
+  background-color:rgba(231, 52, 141, 0.8);
 }
