@@ -83,3 +83,16 @@ body{
   background-color:rgba(231, 52, 141, 0.8);
 }
 
+#yy{
+  background-color: aqua;
+}
+#nn{
+  background-color: rgba(231, 52, 141, 0.8);
+ color: antiquewhite;
+  
+}
+.wow{
+  width: 100%;
+  height: 200px;
+}
+

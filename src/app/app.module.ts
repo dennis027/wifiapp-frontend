@@ -2,33 +2,35 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { SignInComponent } from './auth/sign-in/sign-in.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { AdminComponent } from './admin/admin/admin.component';
-import { CustomerComponent } from './customer/customer/customer.component';
-import { HomeComponent } from './home/home.component';
+import { CustomerComponent } from './customer/customer/customer.component';   
+import { HomeComponent } from './home/home.component';  
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
-import { NavbarComponent } from './navbar/navbar/navbar.component';
-import { AccessControlDirective } from './access-control.directive';
-import { FooterComponent } from './footer/footer/footer.component';
-import { ContactComponent } from './contact/contact/contact.component';
+import { NavbarComponent } from './navbar/navbar/navbar.component'; 
+import { AccessControlDirective } from './access-control.directive';   
+import { FooterComponent } from './footer/footer/footer.component';  
+import { ContactComponent } from './contact/contact/contact.component';   
 import { BusinessComponent } from './bundle/business/business.component';
 import { HomesComponent } from './bundle/homes/homes.component';
 import { SearchPipe } from './search.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+
 // import {CctvComponent} from './security/cctv/cctv.component';
 @NgModule({
   declarations: [
     AppComponent,
 
-    SignInComponent,
+    SignInComponent, 
     SignUpComponent,
     AdminComponent,
-    CustomerComponent,
+    CustomerComponent, 
     HomeComponent,
     NavbarComponent,
     AccessControlDirective,
@@ -37,18 +39,25 @@ import { SearchPipe } from './search.pipe';
     BusinessComponent,
     HomesComponent,
     SearchPipe,
+    MatSliderModule,
     // CctvComponent
   ],
   imports: [
+    TooltipModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
+    FormsModule, 
     NgProgressModule.forRoot(),
-    NgProgressHttpClientModule
+    NgProgressHttpClientModule,
+    BrowserAnimationsModule, 
+    
 
   ],
   providers: [],
   bootstrap: [AppComponent]
-})
+})  
+    
+    
+
 export class AppModule { }
